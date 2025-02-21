@@ -76,13 +76,13 @@ function App() {
 
   ]);
 
-  const addCities =(city) => {
-    setItems([...cities, city])
+  const addCity =(city) => {
+    setCities([...cities, city])
   };
 
   return (
     <>
-    <CardForm>addCities = {addCities} </CardForm>
+    <CardForm addCity = {addCity}></CardForm>
       <div className=" grid grid-cols-4 gap-10">
       {/*<Card
       isVisited={true}
